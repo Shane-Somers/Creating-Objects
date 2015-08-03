@@ -1,0 +1,44 @@
+public class GeometricObject 
+{
+	private String colour;
+	private boolean filled;	
+	private java.util.Date dateCreated;
+
+	
+	public GeometricObject()
+	{
+		colour = "blue";
+		filled = false;
+	}
+	
+	public GeometricObject(String c, boolean f)
+	{
+		this.setColour(c);
+		this.setFilled(f);
+	}
+
+	public String getColour() 
+	{
+		return colour;
+	}
+
+	public void setColour(String c) 
+	{
+		this.colour = c;
+	}
+
+	public boolean isFilled() 
+	{
+		return filled;
+	}
+
+	public void setFilled(boolean f) 
+	{
+		this.filled = f;
+	}
+	
+	public java.util.Date getDateCreated()
+	{
+		return dateCreated;
+	}
+}
