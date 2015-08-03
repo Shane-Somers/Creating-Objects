@@ -1,12 +1,47 @@
-*.class
+public class TestGeoMet 
+{
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+	public static void main(String[] args) 
+	{
+		Triangle t = new Triangle();
+		
+		Square s = new Square();
+		
+		Rectangle r = new Rectangle();
+		
+		Circle c = new Circle();
+		
+		t.setColour("Green");
+		t.setFilled(true);
+		System.out.println(t.getArea());
+		System.out.println(t.getPerimeter());
+		System.out.println(t.getColour());
+		System.out.println(t.isFilled());
+		System.out.println(t.toString());
+		
+		s.setColour("Gold");
+		s.setFilled(true);
+		System.out.println("\n" + s.getArea());
+		System.out.println(s.getPerimeter());
+		System.out.println(s.getColour());
+		System.out.println(s.isFilled());
+		System.out.println(s.toString());
+		
+		r.setColour("Indigo");
+		r.setFilled(true);
+		System.out.println("\n" + r.getArea());
+		System.out.println(r.getPerimeter());
+		System.out.println(r.getColour());
+		System.out.println(r.isFilled());
+		System.out.println(r.toString());
+		
+		c.setColour("Gold");
+		c.setFilled(true);
+		System.out.println("\n" + c.getArea());
+		System.out.println(c.getPerimeter());
+		System.out.println(c.getColour());
+		System.out.println(c.isFilled());
+		System.out.println("A circle was " + c.toString());
+		}
+	
+}
